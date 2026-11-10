@@ -1,4 +1,4 @@
-# Heroes Hub · Marvel
+# Heróis Hub · Marvel
 
 [![CI/CD](https://github.com/SEU-USUARIO/marvel-heroes-hub/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/SEU-USUARIO/marvel-heroes-hub/actions/workflows/ci-cd.yml)
 [![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-ffc72c.svg)](LICENSE)
