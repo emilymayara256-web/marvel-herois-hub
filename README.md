@@ -1,4 +1,4 @@
-# Heróis Hub · Marvel
+# Heroes Hub · Marvel
 
 [![CI/CD](https://github.com/SEU-USUARIO/marvel-heroes-hub/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/SEU-USUARIO/marvel-heroes-hub/actions/workflows/ci-cd.yml)
 [![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-ffc72c.svg)](LICENSE)
@@ -6,7 +6,7 @@
 
 Catálogo, comparador e quiz de super-heróis da Marvel, feito com **HTML, CSS e JavaScript puro**. O foco é mostrar uma esteira de engenharia completa: código testado, Pull Requests com checks obrigatórios e deploy automático no GitHub Pages.
 
-**Demo:** https://emilymayara256-web.github.io/marvel-heroes-hub/ · **Apresentação:** [slides](https://SEU-USUARIO.github.io/marvel-heroes-hub/slides/)
+**Demo:** https://SEU-USUARIO.github.io/marvel-heroes-hub/ · **Apresentação:** [slides](https://SEU-USUARIO.github.io/marvel-heroes-hub/slides/)
 
 [![Assistir à apresentação do projeto](assets/videos/intro.jpg)](assets/videos/intro.mp4)
 

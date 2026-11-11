@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heroes Hub · catálogo de super-heróis da Marvel</title>
+  <meta name="description" content="Catálogo, comparador e quiz de super-heróis da Marvel. Projeto de portfólio com testes e deploy automático.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="./">Heroes Hub</a>
+    <nav aria-label="Principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#comparador">Comparador</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="#videos">Vídeos</a>
+      <a href="slides/">Apresentação</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="capa">
+      <h1>Heroes Hub</h1>
+      <p>Doze heróis da Marvel, seus poderes e quem leva a melhor num confronto de atributos.</p>
+      <p class="contagem" id="contagem"></p>
+    </section>
+
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="ferramentas">
+        <input type="search" id="busca" placeholder="Buscar por herói ou identidade civil" aria-label="Buscar herói">
+        <div id="times" class="chips" role="group" aria-label="Filtrar por time"></div>
+      </div>
+      <div id="grade" class="grade" aria-live="polite"></div>
+    </section>
+
+    <section id="comparador">
+      <h2>Comparador</h2>
+      <div class="duelo">
+        <div class="painel">
+          <h3>Top 5 em poder total</h3>
+          <ol id="ranking" class="ranking"></ol>
+        </div>
+        <div class="painel">
+          <h3>Escolha dois heróis</h3>
+          <div class="selecoes">
+            <select id="heroiA" aria-label="Primeiro herói"></select>
+            <span>x</span>
+            <select id="heroiB" aria-label="Segundo herói"></select>
+          </div>
+          <div id="resultado"></div>
+          <p class="nota">Notas de 1 a 10 são estimativas de fã, não valores oficiais.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="videos">
+      <h2>Vídeos</h2>
+      <div class="videos">
+        <figure>
+          <video controls preload="none" poster="assets/videos/intro.jpg" src="assets/videos/intro.mp4"></video>
+          <figcaption>Apresentação do projeto em 9 segundos.</figcaption>
+        </figure>
+        <figure>
+          <video controls preload="none" poster="assets/videos/pipeline.jpg" src="assets/videos/pipeline.mp4"></video>
+          <figcaption>A esteira da Issue ao Release, passo a passo.</figcaption>
+        </figure>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>Projeto de portfólio sem fins comerciais, não afiliado à Marvel ou à Disney. Nomes e personagens pertencem aos seus respectivos donos.</p>
+    <p><a href="https://github.com/SEU-USUARIO/marvel-heroes-hub">Código no GitHub</a></p>
+  </footer>
+
+  <dialog id="ficha" aria-label="Ficha do herói"></dialog>
+  <script type="module" src="js/script.js"></script>
+  <script type="module" src="js/comparador.js"></script>
+</body>
+</html>
