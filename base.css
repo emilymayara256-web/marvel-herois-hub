@@ -1,0 +1,31 @@
+:root {
+  --tinta: #0e1124; --fundo: #141a35; --painel: #1d2447;
+  --vermelho: #e8362f; --ouro: #ffc72c; --texto: #f2f4ff; --suave: #aab3e0;
+  --ok: #3fb950; --erro: #ff6b6b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--texto); background-color: var(--fundo);
+  background-image: radial-gradient(rgba(255, 255, 255, .06) 1.6px, transparent 1.8px);
+  background-size: 16px 16px;
+  font: 400 1rem/1.6 "Nunito Sans", system-ui, sans-serif;
+}
+h1, h2, h3 { font-family: Bangers, Impact, sans-serif; font-weight: 400; letter-spacing: .04em; line-height: 1.05; margin: 0 0 .6rem; }
+h1 { font-size: clamp(3.4rem, 12vw, 7.5rem); color: var(--ouro); -webkit-text-stroke: .035em #000; paint-order: stroke fill; text-shadow: .05em .05em 0 var(--vermelho); }
+h2 { font-size: clamp(2rem, 5vw, 3rem); color: var(--ouro); }
+h3 { font-size: 1.6rem; }
+a { color: var(--ouro); }
+:focus-visible { outline: 3px solid var(--ouro); outline-offset: 3px; }
+main, .topo, footer { width: min(1100px, 100% - 2rem); margin-inline: auto; }
+section { padding: 2.5rem 0; }
+.topo { display: flex; flex-wrap: wrap; gap: .75rem 2rem; align-items: center; justify-content: space-between; padding: 1rem 0; border-bottom: 3px solid var(--ouro); }
+.marca { font: 1.9rem Bangers, Impact, sans-serif; letter-spacing: .05em; color: var(--texto); text-decoration: none; }
+.topo nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+.topo nav a { color: var(--texto); font-weight: 700; text-decoration: none; }
+.topo nav a:hover { color: var(--ouro); }
+.painel { background: var(--painel); border: 3px solid #000; box-shadow: 7px 7px 0 var(--vermelho); padding: 1.25rem 1.5rem; }
+.capa { padding-top: 3.5rem; }
+.capa p { max-width: 38rem; font-size: 1.2rem; color: var(--suave); }
+.contagem { color: var(--ouro) !important; font-weight: 700; }
+footer { padding: 2rem 0 3rem; color: var(--suave); font-size: .9rem; border-top: 3px solid #000; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
